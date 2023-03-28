@@ -1,0 +1,170 @@
+/* CSS code for my slide landpage portfolio */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background: #3206FF;
+    background: linear-gradient(45deg, #3206FF, #F9839B);
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.slider {
+    display: block;
+    position: relative;
+    width: 100%;
+    /* max-width: 900px; */
+    /* margin: 10px; */
+    background-color: white;
+    overflow: hidden;
+}
+
+.slider__slides {
+    width: 100%;
+    height: 100%;
+    padding-top: 46.9%;
+}
+
+.slider__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lemonchiffon;
+    transition: 1s;
+    opacity: 0;
+    z-index: -1;
+}
+
+.slider__slide.active {
+    opacity: 1;
+    z-index: 0;
+}
+
+.slider__nav-button{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: #333;
+    opacity: .8;
+    cursor: pointer;
+}
+
+#nav-button--prev {
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#nav-button--next {
+    top:50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+#nav-button--prev::after,
+#nav-button--next::after {
+    content: "";
+    position: absolute;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 40%;
+    height: 40%;
+}
+
+#nav-button--next::after{
+    top: 50%;
+    right: 50%;
+    transform: translate(25%, -50%) rotate(-45deg);
+}
+
+#nav-button--prev::after {
+    top: 50%;
+    right: 50%;
+    transform: translate(75%, -50%) rotate(135deg);
+}
+
+@media screen and (max-width: 640px) {
+    .slider__nav-button {
+      height: 40px;
+      width: 40px;
+    }
+}
+
+.slider__nav {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.slider__navlink {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px #fff solid;
+    background-color: #333;
+    opacity: .8;
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+.slider__navlink.active {
+    background-color: #fff;
+    border: 1px #333 solid;
+}
+
+
+
+/* CSS code just for the slide set upfinishes here */
+
+
+.project1-body {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.project2-body {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.project3-body {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 100%;
+    width: 100%;
+}
