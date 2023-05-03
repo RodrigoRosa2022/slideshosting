@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     overflow: hidden;
+    height: 100%;
 }
 
 body {
@@ -111,7 +112,8 @@ body {
 
 .slider__nav {
     position: absolute;
-    bottom: 3%;
+    top: 90%;
+    /* *************************** */
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -136,7 +138,7 @@ body {
 
 
 
-/* CSS code just for the slide set upfinishes here */
+/* CSS code just for the slide set up finishes here */
 
 
 .project1-body {
