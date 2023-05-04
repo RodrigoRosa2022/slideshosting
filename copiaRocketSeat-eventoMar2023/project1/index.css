@@ -14,6 +14,7 @@ body {
     height: 100vh;
 }
 
+
 h3 {
     font-size: 16px;
     line-height: 19px;
@@ -39,6 +40,9 @@ p {
     margin-bottom: 72px;
     color: white;
     opacity: .7;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
@@ -64,3 +68,32 @@ footer {
     bottom: 0;
     height: 30px;
     }
+
+
+
+
+/* *********************************************************** */
+/* Setting Responsivity - Needs to work on Smartphone Devices. */
+/* *********************************************************** */
+
+
+@media (max-width: 500px) {    
+    
+    h1{
+        font-size: 13vw;
+        line-height: 16vw;
+    }
+    
+    a {
+        font-size: 4vw;
+        height: 60px;
+    }
+}
+
+@media (max-width: 424px) {    
+    footer {
+       height: 45px;
+    }
+}
+
+

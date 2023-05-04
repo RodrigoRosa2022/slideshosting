@@ -35,6 +35,9 @@ p {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 span {
@@ -74,3 +77,36 @@ footer {
     height: 30px;
     font-weight: 700;
     }
+
+
+
+
+
+
+
+/* *********************************************************** */
+/* Setting Responsivity - Needs to work on Smartphone Devices. */
+/* *********************************************************** */
+
+
+@media (max-width: 500px) {    
+    
+    h1{
+        font-size: 13vw;
+        line-height: 16vw;
+    }
+    
+    a {
+        font-size: 4vw;
+        height: 60px;
+    }
+}
+
+
+
+
+@media (max-width: 448px) {    
+    footer {
+       height: 45px;
+    }
+}

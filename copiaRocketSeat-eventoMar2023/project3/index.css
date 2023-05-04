@@ -39,6 +39,9 @@ p {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 72px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
@@ -67,3 +70,42 @@ footer {
     bottom: 0;
     height: 30px;
     }
+
+
+
+
+
+
+
+
+/* *********************************************************** */
+/* Setting Responsivity - Needs to work on Smartphone Devices. */
+/* *********************************************************** */
+
+
+@media (max-width: 500px) {    
+    
+    h1{
+        font-size: 13vw;
+        line-height: 24vw;
+    }
+    
+    a {
+        font-size: 4vw;
+        height: 60px;
+    }
+}
+
+@media (max-width: 536px) {    
+    
+    main {
+        margin-top: 200px;
+    }
+}
+
+
+@media (max-width: 424px) {    
+    footer {
+       height: 45px;
+    }
+}
